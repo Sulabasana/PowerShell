@@ -50,3 +50,5 @@ myFunc
 Write-Host $local:foo
 Write-Host $foo
 
+
+
