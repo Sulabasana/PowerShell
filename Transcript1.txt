@@ -1,0 +1,211 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210312203911
+Username: ASUSFRIEDRICH\piotr
+RunAs User: ASUSFRIEDRICH\piotr
+Configuration Name: 
+Machine: ASUSFRIEDRICH (Microsoft Windows NT 10.0.18363.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 9884
+PSVersion: 5.1.18362.1171
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.1171
+BuildVersion: 10.0.18362.1171
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\transcripts\Transcript1.txt
+PS C:\scripts> Get-Service | Where-Object -Preprty Status -eq Stopped
+>> TerminatingError(Where-Object): "A parameter cannot be found that matches parameter name 'Preprty'."
+Where-Object : A parameter cannot be found that matches parameter name 'Preprty'.
+At line:1 char:28
++ Get-Service | Where-Object -Preprty Status -eq Stopped
++                            ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Where-Object], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.WhereObjectCommand
+Where-Object : A parameter cannot be found that matches parameter name 'Preprty'.
+At line:1 char:28
++ Get-Service | Where-Object -Preprty Status -eq Stopped
++                            ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Where-Object], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.WhereObjectCommand
+
+PS C:\scripts> Get-Service | Where-Object -Property Status -eq Stopped
+
+Status   Name               DisplayName
+------   ----               -----------
+Stopped  AarSvc_4154eb0     Agent Activation Runtime_4154eb0
+Stopped  AJRouter           Usługa routera AllJoyn
+Stopped  ALG                Usługa bramy warstwy aplikacji
+Stopped  AppIDSvc           Tożsamość aplikacji
+Stopped  AppReadiness       Przygotowywanie aplikacji
+Stopped  AppXSvc            AppX Deployment Service (AppXSVC)
+Stopped  autotimesvc        Czas komórkowy
+Stopped  AxInstSV           Instalator kontrolek ActiveX (AxIns...
+Stopped  BcastDVRUserSer... Usługa użytkownika DVR z gry i tran...
+Stopped  BDESVC             Usługa szyfrowania dysków funkcją B...
+Stopped  BluetoothUserSe... Usługa obsługi użytkownika protokoł...
+Stopped  Browser            Przeglądarka komputera
+Stopped  BTAGService        Usługa bramy audio Bluetooth
+Stopped  bthserv            Usługa obsługi Bluetooth
+Stopped  CaptureService_... CaptureService_4154eb0
+Stopped  ClipSVC            Usługa licencjonowania klienta (Cli...
+Stopped  COMSysApp          Aplikacja systemowa modelu COM+
+Stopped  ConsentUxUserSv... ConsentUX_4154eb0
+Stopped  CredentialEnrol... CredentialEnrollmentManagerUserSvc_...
+Stopped  defragsvc          Optymalizowanie dysków
+Stopped  DevActSvc          Device Activation Service
+Stopped  DeviceAssociati... DeviceAssociationBroker_4154eb0
+Stopped  DevicePickerUse... DevicePicker_4154eb0
+Stopped  DevicesFlowUser... Przepływ urządzeń_4154eb0
+Stopped  DevQueryBroker     Broker wykrywania w tle zapytań dot...
+Stopped  diagnosticshub.... Standardowa usługa kolektora centru...
+Stopped  diagsvc            Diagnostic Execution Service
+Stopped  DmEnrollmentSvc    Usługa rejestracji zarządzania urzą...
+Stopped  dmwappushservice   Usługa routingu komunikatów wypycha...
+Stopped  dot3svc            Automatyczna konfiguracja sieci prz...
+Stopped  DsmSvc             Menedżer konfiguracji urządzeń
+Stopped  Eaphost            Protokół uwierzytelniania rozszerzo...
+Stopped  edgeupdate         Usługa Aktualizacja programu Micros...
+Stopped  edgeupdatem        Usługa Aktualizacja programu Micros...
+Stopped  EFS                System szyfrowania plików (EFS)
+Stopped  embeddedmode       Tryb osadzony
+Stopped  EntAppSvc          Usługa zarządzania aplikacjami w pr...
+Stopped  Fax                Faks
+Stopped  fdPHost            Host dostawcy odnajdowania funkcji
+Stopped  FDResPub           Publikacja zasobów odnajdowania fun...
+Stopped  fhsvc              Usługa historii plików
+Stopped  FrameServer        Serwer klatek kamer systemu Windows
+Stopped  GoogleChromeEle... Google Chrome Elevation Service
+Stopped  GraphicsPerfSvc    GraphicsPerfSvc
+Stopped  gupdate            Usługa Google Update (gupdate)
+Stopped  gupdatem           Usługa Google Update (gupdatem)
+Stopped  hidserv            Usługa urządzeń interfejsu HID
+Stopped  HvHost             Usługa hosta funkcji HV
+Stopped  icssvc             Usługa hotspotu mobilnego systemu W...
+Stopped  Intel(R) Capabi... Intel(R) Capability Licensing Servi...
+Stopped  IpxlatCfgSvc       Usługa konfiguracji translacji adre...
+Stopped  isaHelperSvc       Intel(R) Security Assist Helper
+Stopped  Kingsoft_WPS_Up... WPS Office Update Service
+Stopped  klvssbridge64_20.0 Kaspersky Volume Shadow Copy Servic...
+Stopped  KSDE4.0            Usługa Kaspersky Secure Connection 4.0
+Stopped  KtmRm              Usługa KTMRM dla usługi Koordynator...
+Stopped  lltdsvc            Mapowanie z odnajdywaniem topologii...
+Stopped  LxpSvc             Usługa możliwości językowych
+Stopped  MapsBroker         Menedżer pobranych map
+Stopped  MessagingServic... Usługa wiadomości_4154eb0
+Stopped  MicrosoftEdgeEl... Microsoft Edge Elevation Service
+Stopped  MixedRealityOpe... Windows Mixed Reality OpenXR Service
+Stopped  MozillaMaintenance Mozilla Maintenance Service
+Stopped  MSDTC              Koordynator transakcji rozproszonych
+Stopped  MSiSCSI            Usługa inicjatora iSCSI firmy Micro...
+Stopped  msiserver          Instalator Windows
+Stopped  MyWiFiDHCPDNS      Wireless PAN DHCP Server
+Stopped  NaturalAuthenti... Naturalne uwierzytelnianie
+Stopped  NcaSvc             Asystent łączności sieciowej
+Stopped  NcdAutoSetup       Autokonfiguracja urządzeń podłączon...
+Stopped  Netlogon           Netlogon
+Stopped  Netman             Połączenia sieciowe
+Stopped  NetSetupSvc        Usługa konfiguracji sieci
+Stopped  NetTcpPortSharing  Usługa udostępniania portów Net.Tcp
+Stopped  NgcCtnrSvc         Kontener usługi Microsoft Passport
+Stopped  NgcSvc             Microsoft Passport
+Stopped  ose64              Office 64 Source Engine
+Stopped  p2pimsvc           Menedżer tożsamości sieci równorzędnej
+Stopped  p2psvc             Grupowanie sieci równorzędnej
+Stopped  perceptionsimul... Usługa symulacji percepcji systemu ...
+Stopped  PerfHost           Host biblioteki DLL liczników wydaj...
+Stopped  PhoneSvc           Usługa telefoniczna
+Stopped  pla                Dzienniki wydajności i &alerty
+Stopped  PNRPAutoReg        Usługa publikowania nazw komputerów...
+Stopped  PNRPsvc            Protokół rozpoznawania nazw równorz...
+Stopped  PrintNotify        Rozszerzenia i powiadomienia drukarek
+Stopped  PrintWorkflowUs... Przepływ pracy drukowania_4154eb0
+Stopped  PushToInstall      Usługa PushToInstall systemu Windows
+Stopped  QWAVE              Quality Windows Audio Video Experience
+Stopped  RasAuto            Menedżer autopołączenia dostępu zda...
+Stopped  RemoteAccess       Routing i dostęp zdalny
+Stopped  RemoteRegistry     Rejestr zdalny
+Stopped  RetailDemo         Usługa trybu pokazowego
+Stopped  RmSvc              Usługa zarządzania radiem
+Stopped  RpcLocator         Lokalizator usługi zdalnego wywołan...
+Stopped  RTLDHCPService     Realtek DHCP Service
+Stopped  SCardSvr           Karta inteligentna
+Stopped  ScDeviceEnum       Usługa wyliczania urządzeń karty in...
+Stopped  SCPolicySvc        Zasady usuwania karty inteligentnej
+Stopped  SDRSVC             Kopia zapasowa systemu Windows
+Stopped  seclogon           Logowanie pomocnicze
+Stopped  SensorDataService  Usługa danych czujników
+Stopped  SensorService      Usługa czujników
+Stopped  SensrSvc           Usługa monitorowania czujników
+Stopped  SessionEnv         Menedżer konfiguracji usług pulpitu...
+Stopped  SharedAccess       Udostępnianie połączenia internetow...
+Stopped  SharedRealitySvc   Usługa danych przestrzennych
+Stopped  shpamsvc           Shared PC Account Manager
+Stopped  SimpleSlideShow... SimpleSlideShowServer
+Stopped  smphost            Miejsca do magazynowania firmy Micr...
+Stopped  SmsRouter          Usługa routera SMS systemu Microsof...
+Stopped  SNMPTRAP           SNMP Trap
+Stopped  spectrum           Usługa percepcji systemu Windows
+Stopped  sppsvc             Ochrona oprogramowania
+Stopped  ssh-agent          OpenSSH Authentication Agent
+Stopped  svsvc              Weryfikator punktowy
+Stopped  swprv              Dostawca kopiowania w tle oprogramo...
+Stopped  TapiSrv            Telefonia
+Stopped  TermService        Usługi pulpitu zdalnego
+Stopped  TieringEngineSe... Zarządzanie warstwami magazynowania
+Stopped  TroubleshootingSvc Usługa Zalecane kroki rozwiązywania...
+Stopped  TrustedInstaller   Instalator modułów systemu Windows
+Stopped  tzautoupdate       Automatyczna aktualizacja strefy cz...
+Stopped  uhssvc             Microsoft Update Health Service
+Stopped  UmRdpService       Przekierowanie portu trybu użytkown...
+Stopped  upnphost           Host urządzenia UPnP
+Stopped  VacSvc             Usługa wolumetrycznego tworzenia dź...
+Stopped  VBoxSDS            VirtualBox system service
+Stopped  vmicguestinterface Interfejs usługi gościa funkcji Hyp...
+Stopped  vmicheartbeat      Usługa pulsu funkcji Hyper-V
+Stopped  vmickvpexchange    Usługa wymiany danych funkcji Hyper-V
+Stopped  vmicrdv            Usługa wirtualizacji pulpitu zdalne...
+Stopped  vmicshutdown       Usługa zamykania systemu gościa fun...
+Stopped  vmictimesync       Usługa synchronizacji czasu funkcji...
+Stopped  vmicvmsession      Usługa PowerShell Direct funkcji Hy...
+Stopped  vmicvss            Obiekt żądający usługi kopiowania w...
+Stopped  VSS                Kopiowanie woluminów w tle
+Stopped  W32Time            Windows Time
+Stopped  WaaSMedicSvc       Windows Update Medic Service
+Stopped  WalletService      Usługa portfela
+Stopped  WarpJITSvc         WarpJITSvc
+Stopped  wbengine           Usługa Aparat kopii zapasowej na po...
+Stopped  wcncsvc            Połącz teraz w systemie Windows — R...
+Stopped  WdNisSvc           Usługa inspekcji sieci Programu ant...
+Stopped  Wecsvc             Kolektor zdarzeń systemu Windows
+Stopped  WEPHOSTSVC         Usługa hosta dostawcy szyfrowania s...
+Stopped  wercplsupport      Pomoc techniczna panelu sterowania ...
+Stopped  WerSvc             Usługa raportowania błędów systemu ...
+Stopped  WFDSConMgrSvc      Usługa menedżera połączeń usług Wi-...
+Stopped  WiaRpc             Zdarzenia pozyskiwania obrazów nier...
+Stopped  WinDefend          Usługa Program antywirusowy Windows...
+Stopped  WinRM              Zdalne zarządzanie systemem Windows...
+Stopped  wisvc              Usługa niejawnego programu testów s...
+Stopped  wlpasvc            Usługa Asystent profilów lokalnych
+Stopped  WManSvc            Usługa zarządzania systemu Windows
+Stopped  wmiApSrv           Karta wydajności WMI
+Stopped  WMPNetworkSvc      Usługa udostępniania w sieci progra...
+Stopped  workfolderssvc     Foldery robocze
+Stopped  WpcMonSvc          Kontrola rodzicielska
+Stopped  WPDBusEnum         Usługa modułu wyliczającego urządze...
+Stopped  wpscloudsvr        WPS Office Cloud Service
+Stopped  WwanSvc            Automatyczne konfigurowanie bezprze...
+Stopped  XblAuthManager     Menedżer autoryzacji Xbox Live
+Stopped  XblGameSave        Zapisywanie gier Xbox Live
+Stopped  XboxGipSvc         Xbox Accessory Management Service
+Stopped  XboxNetApiSvc      Usługa sieciowa Xbox Live
+
+
+PS C:\scripts> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20210312204208
+**********************
