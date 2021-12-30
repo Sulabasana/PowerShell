@@ -1,0 +1,7 @@
+Get-InboxRule -Mailbox Joe@Contoso.com
+
+Get-MailboxFolderStatistics -Identity "Tony" -FolderScope RecoverableItems -IncludeAnalysis
+
+Get-MailboxStatistics -Identity AylaKol
+
+Get-MailboxFolderPermission -Identity john@contoso.com:\Marketing\Reports
